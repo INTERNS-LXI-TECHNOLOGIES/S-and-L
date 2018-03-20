@@ -1,0 +1,16 @@
+--- 
+server: 
+  port: 8082
+spring: 
+  cloud: 
+    stream: 
+      bindings: 
+        messages-in: 
+          contentType: application/json
+          destination: booking
+        messages-out: 
+          contentType: application/json
+          destination: booking
+      kafka: 
+        binder: 
+          brokers: "localhost:9092"
