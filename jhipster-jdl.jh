@@ -1,0 +1,60 @@
+
+entity HealthInsurance {
+patientId Long,
+createdDate LocalDate,
+insuranceNumber Long,
+expiryDate LocalDate,
+coverager String//name of the person that gives access to medical coverage from the insurer
+
+//additionalInsurance Boolean,
+//nameOfsponser String//name of the person who gives access to medical coverage 
+}
+
+entity Insurer {
+  insurarName String,//LIC
+  contactNumber Long,
+  address String
+  //createdDate LocalDate
+}
+entity Relationship{
+relation String
+}
+entity InsuranceCategory{
+categoryName String
+}
+
+entity CoveredActivity{
+activityName String,
+activityPrice Double
+}
+entity InsurerInvoice{
+invoiceNumber Long,
+invoiceDate LocalDate,
+startDate LocalDate,
+endDate LocalDate,
+balance Double
+}
+
+entity Department{
+departmentName String
+}
+
+entity InsurerInvoiceStatus{
+status String
+}
+relationship ManyToMany{
+InsuranceCategory{coveredActivityn} to CoveredActivity
+}
+relationship ManyToOne {
+HealthInsurance{category} to InsuranceCategory,
+	HealthInsurance{status} to Relationship,//relation with patient
+     HealthInsurance{insurer} to Insurer,//provider, eg:Lic
+     InsurerInvoice{insurer} to Insurer,
+     InsurerInvoice{insurerInvoiceStatus} to InsurerInvoiceStatus,
+     InsurerInvoice{department} to Department
+     // Insurer{insuranceCategory} to InsuranceCategory{insurer}
+}
+
+dto * with mapstruct
+service all with serviceImpl
+paginate * with pagination

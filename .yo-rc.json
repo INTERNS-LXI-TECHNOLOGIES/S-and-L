@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.byta.aayos"
+    },
+    "jhipsterVersion": "4.14.0",
+    "baseName": "healthInsurance",
+    "packageName": "com.byta.aayos",
+    "packageFolder": "com/byta/aayos",
+    "serverPort": "8081",
+    "authenticationType": "oauth2",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "1f27326c7fd6190e3afd2bbfc18d6d2d82ffc65b",
+    "enableTranslation": false,
+    "applicationType": "microservice",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "clientPackageManager": "yarn",
+    "skipClient": true,
+    "skipUserManagement": true
+  },
+  "generator-jhipster-swagger-cli": {
+    "apis": {
+      "patientService": {
+        "spec": "http://35.196.80.13:8090/v2/api-docs",
+        "cliTypes": [
+          "back"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180207093416_added_entity_HealthInsurance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180207093417_added_entity_Insurer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180207093418_added_entity_Relationship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180207093419_added_entity_InsurerInvoice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180207093420_added_entity_InsurerInvoiceStatus.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180218173225_added_entity_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180303035158_added_entity_InsuranceCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180303035159_added_entity_CoveredActivity.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180207093416_added_entity_constraints_HealthInsurance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180207093419_added_entity_constraints_InsurerInvoice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180303035158_added_entity_constraints_InsuranceCategory.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

@@ -1,0 +1,61 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "insurerPayment",
+            "otherEntityName": "insurerPayment",
+            "otherEntityRelationshipName": "insurerInvoice"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "insurer",
+            "otherEntityName": "insurer",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "insurerInvoiceStatus",
+            "otherEntityName": "insurerInvoiceStatus",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "department",
+            "otherEntityName": "department",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "invoiceNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "invoiceDate",
+            "fieldType": "LocalDate"
+<<<<<<< HEAD
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "balance",
+            "fieldType": "Double"
+=======
+>>>>>>> ecbadba2924dc7e4a90ac33d168572d1b2ce8920
+        }
+    ],
+    "changelogDate": "20180207093419",
+    "entityTableName": "insurer_invoice",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "healthInsurance"
+}

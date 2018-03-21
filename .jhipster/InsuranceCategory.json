@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "",
+<<<<<<< HEAD
+            "relationshipName": "coveredActivity",
+=======
+            "relationshipName": "coveredActivityn",
+>>>>>>> ecbadba2924dc7e4a90ac33d168572d1b2ce8920
+            "otherEntityName": "coveredActivity",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "categoryName",
+            "fieldType": "String"
+        }
+    ],
+<<<<<<< HEAD
+    "changelogDate": "20180308070609",
+=======
+    "changelogDate": "20180303035158",
+>>>>>>> ecbadba2924dc7e4a90ac33d168572d1b2ce8920
+    "entityTableName": "insurance_category",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "healthInsurance"
+}
